@@ -23,3 +23,25 @@ for (i=1; i<=100; i++){
 
 
 
+// 3.Factorial: Write a function that calculates the factorial of a given positive integer. The
+// factorial of a non-negative integer n is the product of all positive integers less than or
+// equal to n.
+
+
+function fact(){
+  
+  var i;
+  var number; 
+  var f;
+
+  f = 1;
+  number = document.getElementById("number").value;
+
+  for(i = 1; i <= number; i++)  {
+    f = f * i;
+  }
+  i = i - 1;  
+
+     
+  document.getElementById("result").innerHTML = "The factorial of the number " + i + " is: " + f ;
+}
